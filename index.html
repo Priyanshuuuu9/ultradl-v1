@@ -17,7 +17,8 @@
   <script>
     function download() {
       const url = document.getElementById("url").value;
-      alert("Backend connect hone ke baad download chalega");
+      // Connect to Railway backend
+      window.location.href = "https://ultradl-v1-backend-production.up.railway.app/api?url=" + encodeURIComponent(url);
     }
   </script>
 
